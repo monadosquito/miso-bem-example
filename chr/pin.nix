@@ -1,0 +1,30 @@
+{
+    bem
+        =
+        import
+            (fetchTarball
+                 https://github.com/monadosquito/bem/archive/v1.0.0.tar.gz
+            );
+    dvg-git
+        =
+        import
+            (fetchTarball
+                 https://github.com/monadosquito/dvg-git/archive/29c2c46f6cad80ae3362e189eb116ff616b44eca.tar.gz
+            );
+    fetch-hash
+        =
+        import
+            (fetchTarball
+                 https://github.com/monadosquito/fetch-hash/archive/v1.0.0.tar.gz
+            );
+    miso
+        =
+        import
+            (fetchTarball https://github.com/dmjio/miso/archive/1.8.3.tar.gz);
+    traverse
+        =
+        import
+            (fetchTarball
+                 https://github.com/monadosquito/traverse/archive/v1.0.0.tar.gz
+            );
+}
