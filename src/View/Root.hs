@@ -15,8 +15,8 @@ import Miso.String
 
 mkRoot :: Reader MisoString (View ())
 mkRoot = do
-    BlkNoModsElem header <- mkHeader
+    BlkElem header <- mkHeader
     return
         $ div_
               [class_ "Root"]
-              [header Header [Header_Dark] Root Root_Header]
+              [header Header [Header_Dark] Root Root_Header []]

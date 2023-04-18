@@ -13,15 +13,11 @@ import Miso
 import Miso.String
 import Bem.Miso.Utl.Utl
 
-import Bem.Init
 
-import Bem.Miso.View.Mk.Cfg
-
-
-mkHeader :: Reader MisoString (BlkElem ())
+mkHeader :: Reader MisoString (BlkNoModsElem ())
 mkHeader = do
     userName <- ask
-    _mkBlkElem mks (NonVoidHtmlElem header_)
+    mkBlkNoModsElem (NonVoidHtmlElem header_)
         ( []
         , [ noModsBlkNoModsElem (NonVoidHtmlElem span_)
                 ([], [text "Logo"])
@@ -29,6 +25,6 @@ mkHeader = do
                 Root
                 Root_Logo
           , span_ [] [text userName]
-          , search Search [Search_Dark] Header Header_Search []
+          , search Search [Search_Dark] Header Header_Search
           ]
         )
