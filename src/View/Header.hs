@@ -16,7 +16,7 @@ import Bem.Miso.Utl.Utl
 import Bem.Init
 
 
-mkHeader :: Reader MisoString (BlkNoModsElem ())
+mkHeader :: MkBlkNoModsElem' () MisoString
 mkHeader = do
     userName <- ask
     _mkBlkNoModsElem mks (NonVoidHtmlElem header_)
@@ -27,6 +27,6 @@ mkHeader = do
                 Root
                 Root_Logo
           , span_ [] [text userName]
-          , search Search [Search_Dark] Header Header_Search []
+          , search Search [Search_Dark] Header Header_Search
           ]
         )

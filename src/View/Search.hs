@@ -9,18 +9,17 @@ import Bem.Scheme
 
 import Bem.Miso.View.Html
 import Bem.Miso.View.Mk.Mk
-import Bem.Utl.Intr
 import Miso
 
 import Bem.Init
 
-import Bem.Miso.View.Mk.Cfg
+import Bem.Miso.Utl.Utl
 
 
-search :: FromBlkElem (View ())
+search :: BlkNoModsElem' ()
 search
     =
-    _blkElem mks (NonVoidHtmlElem section_)
+    _blkNoModsElem mks (NonVoidHtmlElem section_)
         ( []
         , ([ blkElem (VoidHtmlElem input_)
                  [placeholder_ "Text to search"]
