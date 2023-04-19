@@ -36,6 +36,6 @@
         =
         import
             (fetchTarball
-                 https://github.com/monadosquito/miso-bem/archive/f9d269ca44bab231f24041142d2cdd686fcc575f.tar.gz
+                 https://github.com/monadosquito/miso-bem/archive/55c9d143296b4ee35203a6578a6cb3da7b5d56ab.tar.gz
             );
 }
