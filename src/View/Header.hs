@@ -18,7 +18,7 @@ import Bem.Init
 import Bem.Miso.View.Mk.Cfg
 
 
-mkHeader :: Reader MisoString (BlkElem ())
+mkHeader :: MkBlkElem' () MisoString
 mkHeader = do
     userName <- ask
     _mkBlkElem mks (NonVoidHtmlElem header_)
