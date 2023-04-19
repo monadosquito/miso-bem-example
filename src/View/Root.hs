@@ -8,12 +8,11 @@ import Bem.Scheme
 import View.Header
 
 import Bem.Miso.Utl.Utl
-import Control.Monad.Reader
 import Miso
 import Miso.String
 
 
-mkRoot :: Reader MisoString (View ())
+mkRoot :: MkSingleton' () MisoString
 mkRoot = do
     BlkNoModsElem header <- mkHeader
     return
