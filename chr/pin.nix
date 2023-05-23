@@ -32,4 +32,10 @@
         import
             (fetchTarball https://github.com/NixOS/nixpkgs/archive/21.11.tar.gz
             );
+    miso-bem
+        =
+        import
+            (fetchTarball
+                 https://github.com/monadosquito/miso-bem/archive/4abd2ff1556995fe2bda5c932e824b1bcbebd4bc.tar.gz
+            );
 }
